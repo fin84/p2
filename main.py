@@ -9,7 +9,7 @@ app = FastAPI()
 
 # Dynamically build the path to the model
 BASE_DIR = os.path.dirname(os.path.abspath(_file_))
-MODEL_PATH = os.path.join(BASE_DIR, "brainmodel.h5")
+MODEL_PATH = os.path.join(BASE_DIR, "brain_stroke_classifier.h5")
 
 model = load_model(MODEL_PATH)
 class_labels = ["Normal", "Stroke"]
